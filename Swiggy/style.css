@@ -165,6 +165,7 @@ height: 0;
     background-size: contain;
     background-color: black;
     padding: 6%;
+    background-repeat:no-repeat;
    
 }
 .cities
