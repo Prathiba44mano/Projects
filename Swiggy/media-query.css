@@ -76,12 +76,27 @@ body
 {
   background-color: #ff5200;
 }
+.sticky
+{
+  width: 150px;
+}
+.citi {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 }
 @media only screen and (max-width:599px)
 {
 body
 {
   background-color: #ff5200;
+}
+.citi {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 }
 
