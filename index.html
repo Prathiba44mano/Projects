@@ -4,11 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"><style>
+body
+{
+    background-color: rgb(65, 64, 64);
+    font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+ 
+  font-style: normal;
+}
+.main
+{
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ width: 66%;
+         height:75vh;
+         position: absolute;
+         top:25%;
+         left: 17%;
+         color: #fff;
+         font-family: "Space Grotesk", serif;
+}
+#img
+{
+    width: 12rem;
+    rotate: 90deg;
+    position: absolute;  
+      top: 0;
+    left: 0;
+}
+
+#border
+{
+    width: 12rem;
+    rotate: 270deg;
+    position: absolute;  
+    bottom: 0;
+    right: 0;
+}
+h1{
+    font-size: 75px;
+    
+}
+p{
+    line-height: 30px;
+}
+ul
+{
+    list-style:none;
+    text-decoration: none;
+    font-family: "Space Grotesk", serif;
+    padding-top: 2rem;
+    text-align: left;
+    margin: 5rem 0 0 3rem;
+}
+ul a
+{
+  color: #fff;
+  text-decoration: underline;
+  text-underline-position: under;
+  
+ 
+}
+li {
+  padding: 10px;
+}
+#lis{
+  padding: 15px;
+  font-size: 23px;
+  font-weight: 500;
+  text-decoration:none ;
+color: gold;
+}
+/* a:after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #444;
+  background: linear-gradient(left, transparent 0%,#444 50%,transparent 100%);
+ } */
+</style>
 </head>
 <body>
-    <h1>Projects</h1>
+    <center>
+        <img id="img" src="borde.png">
+        <img id="border" src="borde.png">
+    <div class="main">
+  
+   <span> <h1>Welcome</h1>
+    <p>Below are examples of Projects Designed/ Cloned by me and websites that highlight their Field Periods.  As you will see, they are all quite different and there is no one way to develop these websites.</p></span>
     <ul>
-        <li><a href="Swiggy/index.html">Swiigy</a>        </li>
+        <li id="lis">Projects</li>
+        <li><a href="Swiggy/index.html">Swiggy(cloned)</a> </li>
+        <li><a href="Swiggy/index.html">Swiggy(cloned)</a> </li>
+        <li><a href="Swiggy/index.html">Swiggy(cloned)</a> </li>
     </ul>
+</div>  
+</center>
 </body>
 </html>
