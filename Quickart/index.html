@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickKart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    a{
+		text-decoration: none;
+		padding: 3px;
+		color: white !important;
+	}
+    a:hover{
+		color: rgb(214, 216, 218) !important;
+	}
+    /* .carousel-item
+    {
+        $carousel-transition-duration:.2s;
+    } */
+
+    #dis-image
+    {
+      width: 70%!important;
+    }
+    
+</style>
+</head>
+<body>
+<!-- <navigation> -->
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 px-1 fixed-top " style="background-color: #1d7abf;">
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="index.html">QuickKart</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html#Brands">Brands</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link " href="./index.html#prodcts"  role="button" >
+                      Trending Products
+                    </a>
+                    <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #1d7abf;">
+                      <li><a class="dropdown-item text-light" href="#">Dress</a></li>
+                      <li><a class="dropdown-item" href="#">Laptop</a></li>
+                      <li><a class="dropdown-item" href="#">Mobiles</a></li>
+                      <li><a class="dropdown-item" href="#">Cosmetics</a></li>
+                    </ul> -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html#Contact">Contact</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <br>
+          <br>
+          <br>
+          <br>
+          
+        <!-- <nav ends and display starts
+         -->
+         <center>
+        <div class="container "  >
+       
+          <div class="row g-2 d-flex flex-row justify-content-md-center">
+              <!-- <div class="col-2 col-xs-0" ></div> -->
+              <a href="./product.html#kurtas" class="col-3 col-xl-2"><div >
+                <img id="dis-image" src="images/cloths.jpg" style="width:7rem;"  class="rounded-pill border border-4 border-dark">
+                <p class="text-dark font-weight-bold mt-2">Fashion wears</p>
+              </div>
+            </a>
+            <a href="./product.html#laptops" class="col-3 col-xl-2"><div >
+                <img  id="dis-image"  src="images/lap.jpg" style="width:7rem;" class="rounded-pill border border-4 border-dark">
+                <p class="text-dark font-weight-bold mt-2">Laptops</p>
+              </div>
+            </a>
+            <a href="./product.html#mobiles" class="col-3 col-xl-2"><div >
+                <img  id="dis-image" src="images/mob.jpg"  style="width:7rem;" class="rounded-pill border border-4 border-dark">
+                <p class="text-dark font-weight-bold mt-2">Mobiles</p>
+              </div>
+            </a>
+            <a href="./product.html#cosmetics" class="col-3 col-xl-2"><div >
+                <img  id="dis-image" src="images/cos.jpg" style="width:7rem;" class="rounded-pill border border-4 border-dark">
+                <p class="text-dark font-weight-bold mt-2">Cosmetics</p>
+              </div>
+            </a>
+            <!-- <div class="col-2 hidden-xs"></div> -->
+          </div>
+
+            </div>
+          </center>
+         
+<!-- display end and carousel starts -->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/carousel1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel4.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+
+  </div>
+<!-- trending brands --> <center> 
+<div class="container-fluid" id="prodcts">
+  <div class="tren px-5 pt-5 mt-3" style="background-color:pink; width: fit-content;">
+  <h3 class=" text-light text-start " >TRENDING PRODUCTS !! </h3>
+  <div class="row g-2">
+    <div class="col-12 col-sm-12 col-xs-12 col-lg-3 col-md-6 col-xl-3 col-xxl-3" >
+     <a href="./product.html#mobiles">
+       <div class="card m-2 border border-12 border-dark" >
+        <img src="images/mobiles.jpg" class="p-4 card-img-top" alt="...">
+        <h5 class="text-uppercase font-weight-light text-dark">IPHONE 16 PRO</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item border border-2"><h4>20% OFF</h4></li>
+        </ul>
+   </div>
+  </a>
+    </div>
+    <div class="col-12 col-sm-12 col-xs-12 col-lg-3 col-md-6 col-xl-3 col-xxl-3" >
+      <a href="./product.html#kurtas">
+        <div class="card m-2 border border-12 border-dark" >
+         <img src="images/shirt.jpg" class="p-4 card-img-top" alt="...">
+         <h5 class="text-uppercase font-weight-light text-dark">OTTO</h5>
+         <ul class="list-group list-group-flush">
+           <li class="list-group-item border border-2"><h4>Flat 50% OFF</h4></li>
+         </ul>
+    </div>
+   </a>
+     </div>
+     <div class="col-12 col-sm-12 col-xs-12 col-lg-3 col-md-6 col-xl-3 col-xxl-3" >
+      <a href="./product.html#cosmetics">
+        <div class="card m-2 border border-12 border-dark">
+         <img src="images/cosm.jpg" class="p-4 card-img-top" alt="...">
+         <h5 class="text-uppercase font-weight-light text-dark">Lakme </h5>
+         <ul class="list-group list-group-flush">
+           <li class="list-group-item border border-2"><h4>80% OFF</h4></li>
+         </ul>
+    </div>
+   </a>
+     </div>
+     <div class="col-12 col-sm-12 col-xs-12 col-lg-3 col-md-6 col-xl-3 col-xxl-3" >
+      <a href="./product.html#laptops">
+        <div class="card m-2 border border-12 border-dark" >
+         <img src="images/laptop.jpg" class="p-4 card-img-top" alt="...">
+         <h5 class="text-uppercase font-weight-light text-dark">DELL Laptops</h5>
+         <ul class="list-group list-group-flush">
+           <li class="list-group-item border border-2"><h4>70% OFF</h4></li>
+         </ul>
+    </div>
+   </a>
+     </div>
+</div>
+</div>
+</div>
+</center>
+<!-- Marquee starts -->
+<div class="container-fluid">
+  <h1 class="my-5 px-5"  >Top Brands !!</h1>
+  <marquee scrollamount="60" id="Brands">
+    <img id="dis-imag" src="https://static.vecteezy.com/system/resources/previews/020/927/533/non_2x/lenovo-logo-brand-phone-symbol-name-blue-design-china-mobile-illustration-free-vector.jpg" height="200" width="200" class="rounded-pill border border-dark p-10">
+    <span style="padding-left:150px;"><img src="https://media.licdn.com/dms/image/v2/D560BAQFGkjCTm4xk7Q/company-logo_200_200/company-logo_200_200/0/1719256876155/otto_clothing_logo?e=2147483647&amp;v=beta&amp;t=fjFwfK5Y0euJA-dUBLBo_9JcojZCHgeqdyB-5iYHcT0" height="200" width="200" class="rounded-pill border border-dark"></span>
+    <span style="padding-left:150px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xUyxMtlPL1Hhsc1fW0GJgfOsU9Au0cSviQ&amp;s" height="200" width="200" class="rounded-pill border border-dark"></span>
+    <span style="padding-left:150px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWUv_BNYwQ2Cb3u9at8LZ2JmRaHOJeXlwW7w&amp;s" height="200" width="200" class="rounded-pill border border-dark"> </span>
+    <span style="padding-left:150px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6RACuKQ8sJxNXI17b6tLyd4vmhraPT5OYmw&amp;s" height="200" width="200" class="rounded-pill border border-dark"></span>
+    <span style="padding-left:150px;"><img src="https://blog.logomaster.ai/hs-fs/hubfs/samsung-logo-1993.jpg?width=672&amp;height=454&amp;name=samsung-logo-1993.jpg" height="200" width="200" class="rounded-pill border border-dark"></span>
+    <span style="padding-left:150px;">	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRna2FbwVAYN_yBHf2Gdtad3fBfO22iy235kA&amp;s" height="200" width="200" class="rounded-pill border border-dark"></span>
+    <span style="padding-left:150px;"><img src="https://thumbs.dreamstime.com/b/nike-logo-white-background-editorial-illustration-company-168841205.jpg" height="200" width="200" class="rounded-pill border border-dark"></span>
+    <span style="padding-left:150px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTDY6kUaLj6FQhuBprxkNhhERufzb7D0mPfA&amp;s" height="200" width="200" class="rounded-pill border border-dark"></span>
+    <span style="padding-left:150px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1H_DuBu7daHseQafAQ2R6Uif7xFgulPy1K62HdyRrsQdHX-evwt5eut9c7Xf65lRbP2Y&amp;usqp=CAU" height="200" width="200" class="rounded-pill border border-dark"></span>
+    <span style="padding-left:150px;"><img src="https://cleanclothes.org/image-repository/livingwage-living-wage-images-h-m-logo/@@images/image.jpeg" height="200" width="200" class="rounded-pill border border-dark"></span>
+    <span style="padding-left:150px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkj7pEe2KkuHittje6nvwqnW_tbZ9qw-dhoA&amp;s" height="200" width="200" class="rounded-pill border border-dark"></span>
+      <span style="padding-left:150px;"><img src="https://zerocreativity0.wordpress.com/wp-content/uploads/2017/01/himalaya-logo.jpg" height="200" width="200" class="rounded-pill border border-dark"></span>
+      <span style="padding-left:150px;"><img src="https://seeklogo.com/images/V/vivo-logo-9FBC12B0F9-seeklogo.com.png" height="200" width="200" class="rounded-pill border border-dark"></span>
+    </marquee>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+<footer>
+  <div class="container-fluid text-light" style="background-color: rgb(168, 168, 168);">
+<center>
+
+ <h2 id="Contact"> QUICKKART</h2>
+  The products have the 1 week return policy<br>
+If there is any damage it could be exchange<br>
+We promise that the product will be reach within one week
+<br>
+ <a href="">
+  contact:7010809155
+ </a>
+ <br>
+ <a href="">
+ Email:"Quickkart09@email.com
+</a>
+</center>
+  </div>
+
+</footer>
+</html>
