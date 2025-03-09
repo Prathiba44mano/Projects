@@ -1,0 +1,143 @@
+.navbar a
+{
+color: #000 !important;
+font-size: 1rem;
+text-transform: uppercase;
+font-weight:400;
+margin: 1rem 1rem 0 1rem;
+}
+.carousel-caption
+{
+top: 10%!important;
+right: 0!important;
+left: 8%!important;
+
+} 
+
+
+/* .btn:hover
+{
+background-color: #fff;
+color: #000;
+}
+.list-group li
+{
+    border: none!important;
+    background-color: blue;
+} */
+
+
+.filterDi{
+ 
+    display: flex;
+    flex-wrap: wrap;
+   
+   }  
+       .filterDiv {
+     
+   
+     margin: 1rem;
+     display: none;
+   }
+   #myBtnContainer
+   {
+       display: flex;
+       flex-direction: column;
+       background-color: #fff!important;
+       border: #666 1px solid;
+       
+   }
+   .card-body li
+           {
+          
+               border: none;
+              
+   }
+   .card-title
+   {
+       font-weight:normal!important;
+   }
+   .show {
+     display: block;
+   }
+       .accordion-body
+       {
+           padding: 0;
+       }
+       .list-group
+           {
+          
+               margin: 0;
+               border: rgb(172, 172, 172) ;
+           }
+           
+   
+   #myBtnContainer .btn {
+     border: none;
+     outline: none;
+     padding: 12px 20px;
+     background-color: #fff!important;
+     cursor: pointer;
+     text-transform: uppercase;
+     text-align: start;
+   }
+   
+   #myBtnContainer .btn:hover {
+     border: none;
+     outline: none;
+     padding: 12px 20px;
+     background-color: rgb(235, 233, 233)!important;
+     cursor: pointer;
+     text-transform: uppercase;
+     text-align: start;
+     box-shadow:none!important;
+   }
+   .accordion-button
+   {
+   border: rgb(151, 149, 149) solid 1px;
+   box-shadow:none!important;
+   }
+   .accordion-button:not(.collapsed) {
+    color: #666!important;
+      background-color: #fff!important;
+      box-shadow:none!important;
+      border: rgb(151, 149, 149) solid 1px;
+  }
+   #myBtnContainer .btn.active {
+     background-color: #666;
+     box-shadow:none!important;
+     
+   }
+   .hov:hover + .hide-icons
+   {
+     
+    display: block;
+   
+   }
+   
+   .hide-icons
+   {
+   
+     position: absolute;
+    right: 5px;
+     top: 0px;
+     z-index: 1;
+     cursor: pointer;
+   
+   }
+   .hide-icons li
+   {
+   
+   
+   margin-top: 20px;
+       border-radius: 50%;
+       width: 35px!important;
+       height: 35px!important;
+       list-style: none;
+       background-color: #fff;
+       text-align: center;
+   }
+   .bi{
+     width: 25px!important;
+       height: 22px!important;
+   }
