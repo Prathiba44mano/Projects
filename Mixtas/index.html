@@ -1,0 +1,2548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="images/vite.svg" />
+  <title>Mixtas</title>
+  <link href="images/_variables.scs" rel="stylesheet/scss" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="script.js" rel=""></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+
+</style>
+
+<body>
+  <!-- navstart -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" style="width:10rem;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto 5 mb-2 mb-lg-0 ms-5">
+            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#Product-menu">Products</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#footer">Contact Us</a> </li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-end">
+          <span class="nav-link active mx-0" aria-current="page" href="#"><img src="images/Icon (1).png" width="24">
+          </span>
+          <span class="nav-link active mx-0" aria-current="page" href="#"><img src="images/Icon (5).png" width="25"></span>
+          <span class="nav-link active mx-0 bicon1" d="acmyBtn" aria-current="page" href="#"><img src="images/Icon (3).png" width="28">
+          </span>
+          <div id="cartModal" class="acmodal">
+            <!-- Modal content -->
+            <div class="acmodal-content">
+                <div class="modal-header" style="justify-content: space-between;">
+                  <h4>SHOPPING CART 0</h4>
+                    
+                  <button class="btn-close acclose" type="button" data-bs-dismiss="modal"></button>
+        
+                </div>
+                <hr>
+              <div class="modal-body" >
+            <ul class="list-group list-inline-item " >
+                    <li class="list-group-item my=2 ">
+        <div class="row" >
+          <div class="col col-4" >
+            <img src="images/popula-products (1).png" width="100px"> 
+               <div class=" py-1 d-flex justify-content-start" role="button" >
+            <div style="width:100px; " class="d-flex justify-content-between border ">
+              <span class="fs-5 px-2">-</span>
+            <span class="fs-5 px-2">1</span>
+            <span class="fs-5 px-2">+</span>
+        </div>
+        </div>
+        </div>
+        <div class="col col-8" >
+          <p class="fs-6">Adidas X Pop Beckenbauer Track Jacket</p>
+          <p class="fs-6">black</p>
+          <p class="fs-6">$120.00</p>
+        </div>
+        
+        
+        </div>
+        </li>
+        <!-- <li class="list-group-item my-2 ">
+          <div class="row" >
+            <div class="col col-4" >
+              <img src="images/popula-products (1).png" width="100px"> 
+                 <div class=" py-1 d-flex justify-content-start" role="button" >
+              <div style="width:100px; " class="d-flex justify-content-between border ">
+                <span class="fs-5 px-2">-</span>
+              <span class="fs-5 px-2">1</span>
+              <span class="fs-5 px-2">+</span>
+          </div>
+          </div>
+          </div>
+          <div class="col col-8" >
+            <p class="fs-6">Adidas X Pop Beckenbauer Track Jacket</p>
+            <p class="fs-6">black</p>
+            <p class="fs-6">$120.00</p>
+          </div>
+          
+          
+          </div>
+          </li> -->
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        
+                  </ul> <br>
+        
+        
+                  <div style="display:flex;    justify-content: space-between;">
+                    <div><h5>SUBTOTAL:</h5></div>
+                    <div><h5>$245</h5></div>
+                   
+                  </div>
+                </div>
+                <hr>
+                <div class="modal-footer" style="justify-content: space-evenly">
+                  <button type="button" class="btn btn-light">View cart</button>
+                  <button type="button" class="btn btn-dark" data-dismiss="modal">Check out</button>
+                </div> 
+              </div>
+            </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- navends -->
+  <!-- carosul starts -->
+  <div class="container-fluid p-0">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner" style="height: 650px;">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img class="d-block w-100" src="images/caurosal1.png">
+          <div class="carousel-caption d-grid ">
+            <div class="row  text-dark text-start">
+              <div class="col align-baseline ">
+                <h3 class="carousel-title  text-uppercase">New Arrivals</h3>
+                <p class="carousel-text " style="font-size:5em; font-weight: bolder;">Stylish <br>
+                  comforts for<br> fall nights</p>
+                <button type="button" class="btn btn-dark px-4 py-2">Shop Now</button>
+              </div>
+              <div class="col"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img class="d-block w-100" src="images/caurosal2.png">
+          <div class="carousel-caption d-grid ">
+            <div class="row  text-dark text-start">
+              <div class="col align-baseline ">
+                <h3 class="carousel-title  text-uppercase">New Arrivals</h3>
+                <p class="carousel-text " style="font-size:5em; font-weight: bolder;">Stylish <br>
+                  comforts for<br> fall nights</p>
+                <button type="button" class="btn btn-dark px-4 py-2">Shop Now</button>
+              </div>
+              <div class="col"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img class="d-block w-100" src="images/caurosal3.png">
+          <div class="carousel-caption d-grid ">
+            <div class="row  text-dark text-start">
+              <div class="col align-baseline ">
+                <h3 class="carousel-title  text-uppercase">New Arrivals</h3>
+                <p class="carousel-text " style="font-size:5em; font-weight: bolder;">Stylish <br>
+                  comforts for<br> fall nights</p>
+                <button type="button" class="btn btn-dark px-4 py-2">Shop Now</button>
+              </div>
+              <div class="col"></div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="container-fluid d-grid mt-5" id="Product-menu">
+    <div class="row ">
+      <div class="col col-3 p=2" style="display: flex; flex-direction: row-reverse;">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item" style="width:250px ; align-self: left;">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
+                onclick="filterSelection('all')">
+                PRODUCTS
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body" id="myBtnContainer">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center btn active text-dark"
+                    id="btn" onclick="filterSelection('hoodie')">
+                    HOODIES
+                    <span class="badge bg-light text-dark rounded-pill">5</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center btn text-dark" id="btn"
+                    onclick="filterSelection('men')">
+                    MEN
+                    <span class="badge bg-light text-dark rounded-pill">7</span>
+                  </li>
+
+                  <li class="list-group-item d-flex justify-content-between align-items-center btn text-dark" id="btn"
+                    onclick="filterSelection('jacket')">
+                    JACKETS
+                    <span class="badge bg-light text-dark rounded-pill">6</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center btn text-dark" id="btn"
+                    onclick="filterSelection('sweatshirt')">
+                    SWEATSHIRTS
+                    <span class="badge bg-light text-dark  rounded-pill">5</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center btn text-dark" id="btn"
+                    onclick="filterSelection('others')">
+                    OTHERS
+                    <span class="badge bg-light text-dark rounded-pill">2</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-9">
+        <h6 style="text-transform: captalise; color: #666;">&nbsp&nbsp&nbsp&nbsp Showing 1-12 of 47 results</h6>
+        <div class="container filterDi">
+
+          <div class="filterDiv hoodie hov">
+
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (1).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+                <img src="images/popula-products (1).png" class="card-img-top" alt="..." style="height: 13rem;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">HOODIES</h5>
+                <p class="card-text" style="color:#100;">Classic Small Logo Sweatpants, black</p>
+                <p class="price" style="color:#bbb;">$450.00</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="filterDiv men">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (2).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (2).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">MEN</h5>
+                <p class="card-text" style="color:#100;">Classic Small Logo Sweatpants, black</p>
+                <p class="price" style="color:#bbb;">$450.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv men">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (3).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (3).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">MEN</h5>
+                <p class="card-text" style="color:#100;">Classic Small Logo Sweatpants, black</p>
+                <p class="price" style="color:#bbb;">$160.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv sweatshirt">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (4).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (4).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">SWEATSHIRTS</h5>
+                <p class="card-text" style="color:#100;">Button knit cardigon</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv others">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (5).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (5).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">BAGS</h5>
+                <p class="card-text" style="color:#100;">adidas X Pop Beckenbauer Track Jacket</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv others">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (6).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (6).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">BAGS</h5>
+                <p class="card-text" style="color:#100;">adidas X Pop Beckenbauer Track Jacket</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv men">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (7).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (7).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">MEN</h5>
+                <p class="card-text" style="color:#100;">Classic Small Logo Sweatpants, black</p>
+                <p class="price" style="color:#bbb;">$320.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv sweatshirt">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (8).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (8).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">SWEATSHIRTS</h5>
+                <p class="card-text" style="color:#100;">Button knit cardigon</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv jacket">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (9).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (9).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">JACKETS</h5>
+                <p class="card-text" style="color:#100;">adidas X Pop Beckenbauer Track Jacket</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv hoodie">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (10).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (10).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">HOODIES</h5>
+                <p class="card-text" style="color:#100;">Dime Classic Remastered Hoodie, black</p>
+                <p class="price" style="color:#bbb;">$80.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv hoodie">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (11).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (11).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">HOODIES</h5>
+                <p class="card-text" style="color:#100;">Dime Classic Remastered Hoodie, black</p>
+                <p class="price" style="color:#bbb;">$155.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv sweatshirt">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (12).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (12).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">SWEATSHIRTS</h5>
+                <p class="card-text" style="color:#100;">Button knit cardigon</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv sweatshirt">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (13).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (13).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">SWEATSHIRTS</h5>
+                <p class="card-text" style="color:#100;">Button knit cardigon</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv men">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (14).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (14).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">MEN</h5>
+                <p class="card-text" style="color:#100;">Classic Small Logo Sweatpants, black</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv men">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (15).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (15).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">MEN</h5>
+                <p class="card-text" style="color:#100;">Classic Small Logo Sweatpants, black</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv others">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (16).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (16).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">CAP</h5>
+                <p class="card-text" style="color:#100;">adidas X Pop Beckenbauer Track Jacket</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv others">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (17).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (17).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">SHOES</h5>
+                <p class="card-text" style="color:#100;">adidas X Pop Beckenbauer Track Jacket</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv men">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (18).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (18).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">MEN</h5>
+                <p class="card-text" style="color:#100;">Classic Small Logo Sweatpants, black</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv hoodie">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (19).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (19).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">HOODIES</h5>
+                <p class="card-text" style="color:#100;">Dime Classic Remastered Hoodie, black</p>
+                <p class="price" style="color:#bbb;">$220.00</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="filterDiv jacket">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (20).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (20).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">JACKETS</h5>
+                <p class="card-text" style="color:#100;">adidas X Pop Beckenbauer Track Jacket</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv sweatshirt">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (21).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (21).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">SWEATSHIRTS</h5>
+                <p class="card-text" style="color:#100;">Button knit cardigon</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv jacket">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (22).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (22).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">JACKETS</h5>
+                <p class="card-text" style="color:#100;">adidas X Pop Beckenbauer Track Jacket</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv jacket">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (23).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (23).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">JACKETS</h5>
+                <p class="card-text" style="color:#100;">adidas X Pop Beckenbauer Track Jacket</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv hoodie">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (24).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (24).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">HOODIES</h5>
+                <p class="card-text" style="color:#100;">Dime Classic Remastered Hoodie, black</p>
+                <p class="price" style="color:#bbb;">$330.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv jacket">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (25).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (25).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">JACKETS</h5>
+                <p class="card-text" style="color:#100;">adidas X Pop Beckenbauer Track Jacket</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv jacket">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (26).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (26).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">JACKETS</h5>
+                <p class="card-text" style="color:#100;">adidas X Pop Beckenbauer Track Jacket</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv others">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (27).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (27).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">BAGS</h5>
+                <p class="card-text" style="color:#100;">adidas X Pop Beckenbauer Track Jacket</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv sweatshirt">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (28).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (28).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">SWEATSHIRTS</h5>
+                <p class="card-text" style="color:#100;">Button knit cardigon</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv men">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (29).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (29).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">MEN</h5>
+                <p class="card-text" style="color:#100;">Classic Small Logo Sweatpants, black</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv men">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (30).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (30).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">MEN</h5>
+                <p class="card-text" style="color:#100;">Classic Small Logo Sweatpants, black</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv jacket">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (31).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (31).png" class="card-img-top" alt="..." style="height: 13rem;"></div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">JACKETS</h5>
+                <p class="card-text" style="color:#100;">adidas X Pop Beckenbauer Track Jacket</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="filterDiv men">
+            <div class="card" style="width: 16rem;">
+              <div class="hide-i">
+                <div class="hide-icons">
+                  <!-- <span id="heart"><i id="bi" class="bi bi-search" style="vertical-align:-0.4rem ; "></i></span><br> -->
+                  <span id="heart" class="bicon"><i id="bi" class="bi bi-heart"></i></span>
+                  <span id="cmyBtn" class="bicon"><i id="bi" class="bi bi-search"></i></span>
+                  <div id="cardModal" class="cmodal">
+                    <!-- Modal content -->
+                    <div class="cmodal-content">
+                      <span class="cclose">&times;</span>
+                      <br>
+                      <hr>
+
+                      <div class="row">
+
+                        <div class="col col-6"><img class="image-top" style="width:400px;"
+                            src="images/popula-products (32).png" alt="">
+                        </div>
+                        <div class="col col-6">
+                          <h4>Adidas X Pop Beckenbauer Track Jacket</h4><br>
+                          <h6>$120.00</h6><br>
+                          <p>A product short description is a concise and brief overview of a product, providing key
+                            information to potential customers. Typically, it is a brief summary that highlights the
+                            most important features, benefits, and characteristics of the product
+                          <h5>Color : Black</h5> <br>
+                          <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                                justify-content: space-between;">
+                            <li class="list-group-item border-0"
+                              style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                              ;></li>
+                            <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                              ;></li>
+                            <li class="list-group-item border-0"
+                              style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                          </ul> <br>
+                          <div class=" py-1 d-flex justify-content-start" role="button">
+                            <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                                class="fs-5 px-3">-</span>
+                              <span class="fs-5 px-3">1</span>
+                              <span class="fs-5 px-3">+</span>
+                            </div>
+
+                            <button class="btn btn-dark"> Add To Cart</button>
+                          </div>
+
+                          <br><br>
+                          <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span id="cart" class="bicon"><i id="bi" class="bi bi-cart2" style="width:20px;"></i></span>
+                </div>
+              <img src="images/popula-products (32).png" class="card-img-top" alt="..." style="height: 13rem;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase " style="color:#bbb; ">MEN</h5>
+                <p class="card-text" style="color:#100;">Classic Small Logo Sweatpants, black</p>
+                <p class="price" style="color:#bbb;">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="filterDiv others"> <div class="card" style="width: 16rem;">
+      <img src="images/popula-products (33).png" class="card-img-top" alt="..." style="height: 13rem;">
+      <div class="card-body">
+        <h5 class="card-title text-uppercase "style="color:#bbb; ">JACKETS</h5>
+        <p class="card-text"style="color:#100;">adidas X Pop Beckenbauer Track Jacket</p> 
+         <p class="price"style="color:#bbb;">$120.00</p>
+      </div>
+    </div>
+    </div> -->
+
+
+          <!-- ------- -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer" style="height:200px ; background-color: black;">
+
+
+  </div>
+
+  </body>
+  <script>
+
+
+// var acmodal = document.getElementById("cartModal");
+
+// // Get the button that opens the modal
+// var abtn = document.getElementById("acmyBtn");
+
+// // Get the <span> element that closes the modal
+// var aspan = document.getElementsByClassName("acclose")[0];
+
+// // When the user clicks the button, open the modal 
+// abtn.onclick = function() {
+//   acmodal.style.display = "block";
+//   acmodal.style.display = "block";
+// }
+
+// // When the user clicks on <span> (x), close the modal
+// aspan.onclick = function() {
+//   acmodal.style.display = "none";
+// }
+
+
+
+
+
+
+
+
+
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+
+    {
+      var hicon = document.getElementsByClassName('hide-icons')
+      var hdiv = document.getElementsByClassName('hide-i')
+      hdiv.addEventListener('mousehover', show)
+      hdiv.addEventListener('mouseout', hidden)
+
+      function show() {
+        hicon.style.display = "block";
+      }
+      function hidden() {
+        hicon.innerHTML = '<i id="bi" class="bi bi-search"></i>';
+      }
+    }
+
+
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</html>
