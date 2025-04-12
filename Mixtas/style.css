@@ -112,9 +112,8 @@ color: #000;
      box-shadow:none!important;
      
    }
- 
    
-   #hide-icons
+   .hide-icons
    {
    
      position: absolute;
@@ -124,7 +123,14 @@ color: #000;
      cursor: pointer;
      display: flex!important;
      flex-direction: column;
-  
+    color:  rgba(0, 0, 0, 0);
+   
+   } 
+ 
+   #card:hover .bicon
+   {
+    color: rgb(255, 253, 253);
+    background-color: rgba(143, 140, 140, 0.699);
    
    } 
  
@@ -135,8 +141,8 @@ color: #000;
   width: 35px!important;
   height: 35px!important;
   padding: 6px 10px 13px 10px;
-  background-color: #fff;
-  color: #666;
+  /* background-color: #fff; */
+  
   text-align: center;
   
    }
@@ -184,13 +190,15 @@ color: #000;
   }
  
 
-  
-   .offcanvas
+/*   
+   /* .offcanvas
    {
-    height: 600px;
-    width: 360px!important;
+    /* height: 600px;
+    width: 360px!important; 
     margin-top: 1rem;
-   }
+   } */ 
+
+
    .list-group-item+.list-group-item 
    {
      border-top-width: 1px!important;
@@ -284,4 +292,3 @@ color: #000;
   
   font-size: small!important;
 }
- 

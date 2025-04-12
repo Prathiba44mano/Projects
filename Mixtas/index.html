@@ -14,17 +14,64 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <style>
 
+#cartul li{
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0;
+    border: 1px solid #ddd7d7;
+    padding: 5px;
+}
+.quantity
+{
+    border: 1px solid rgb(255, 255, 255);
+    
+    height: 28px;
+    cursor: pointer;
+}
+.quantity span
+{
+   padding: 5px;
+   background-color: #7c7b79;
+   margin: 0;
+  color: #fcfcf6;
+}
+#addcart
+{
+  display: none;
+}
+#card{
+  width: 16rem !important;
+}
+.card-body
+{
+  padding:8px;
+}
+@media only screen and (max-width: 600px) and (min-width: 100px)  {
+  .filterDi .card{
+width: max-content!important;
+  }
+  #h6{
+display: none;
+  }
+ .accord{
+flex-direction: row!important;
+  }
+
+
+
+}
 </style>
 
-<body>
+<body onload="filterSelection('all')">
   <!-- navstart -->
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="images/logo.png" style="width:10rem;"></a>
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" style="width:10rem;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -32,7 +79,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto 5 mb-2 mb-lg-0 ms-5">
             <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#Product-menu">Products</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="shop.html">Products</a> </li>
             <li class="nav-item"> <a class="nav-link" href="#footer">Contact Us</a> </li>
           </ul>
         </div>
@@ -40,66 +87,69 @@
           <span class="nav-link active mx-0" aria-current="page" href="#"><img src="images/Icon (1).png" width="24">
           </span>
           <span class="nav-link active mx-0" aria-current="page" href="#"><img src="images/Icon (5).png" width="25"></span>
-          <span class="nav-link active mx-0 bicon1" aria-current="page" href="#">
-            <button style="border:0 ; background:none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="images/Icon (3).png" width="28">
-            <sup class="bg-darktext-white rounded-circle badge bg-dark" style=" font-size: xx-small;">1</sup>
-          </button></span>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRight">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">SHOPPING CART  <sup>
-            <span class="bg-darktext-white rounded-circle badge bg-dark " style=" font-size: small;"> 1</span></sup>
-            </h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           
-        </div>
-        <hr>
-        <div class="offcanvas-body">
-            
-            <ul class="list-group list-inline-item " >
-                <li class="list-group-item my=2 ">
-                   
-    <div class="row" >
-      <div class="col col-4" >
-        <img src="images/popula-products (1).png" width="100px"> 
-           <div class=" py-1 d-flex justify-content-start" role="button" >
-        <div style="width:100px; " class="d-flex justify-content-between border ">
-          <span class="fs-5 px-2">-</span>
-        <span class="fs-5 px-2">1</span>
-        <span class="fs-5 px-2">+</span>
-    </div>
-    </div>
-    </div>
-    <div class="col col-8" >
-      <p class="fs-6">Adidas X Pop Beckenbauer Track Jacket</p>
-      <p class="fs-6">black</p>
-      <p class="fs-6">$120.00</p>
-    </div>
-    </div>
-    </li>
-     <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      
-      <div style="display:flex; justify-content: space-between;">
-        <div><h5>SUBTOTAL:</h5></div>
-        <div><h5>$245</h5></div>
-       
-      </div></ul></div>
-           <hr>
-    
-              <div class="offcanvas-footer" style=" justify-content:space-evenly!important;" >
-             
-           
-                <button type="button" class="btn btn-light">View cart</button>
-                <button type="button" class="btn btn-dark" >Check out</button>
+
+       <span class="nav-link active mx-0 bicon1" aria-current="page" href="#">
+            <button style="border:0 ; background:none;" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="images/Icon (3).png" width="28">
+            <sup class="bg-darktext-white rounded-circle badge bg-dark icon-cart" id="icon-cart" style=" font-size: xx-small;"><span></span></sup>
+          </button></span>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRight">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title icon-cartt" id="offcanvasExampleLabel">SHOPPING CART  <sup>
+                <span class="rounded-circle badge bg-light text-dark "  style=" font-size: small;"> </span></sup>
+                </h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               
+            </div>
+            <hr>
+            <div class="offcanvas-body">
+                
+                <ul id="cartul" class="list-group list-inline-item listCart" >
+                   
+                    <!-- <div class="image">
+                        <img src="${info.image}">
+                    </div>
+                    <div class="name">
+                    ${info.Productname}
+                    </div>
+                    <div class="totalPrice">$${info.Price * item.quantity}</div>
+                    // <div class="quantity">
+                    //     <span class="minus"><</span>
+                    //     <span>${item.quantity}</span>
+                    //     <span class="plus">></span>
+                    // </div>
+         <br> -->
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br> 
+          
+          
+          <!-- <div style="display:flex; justify-content: space-between;">
+            <div><h5>SUBTOTAL:</h5></div>
+            <div><h5>$245</h5></div>
+           
+          </div> -->
+        </ul>
         </div>
-    
-    </div>
+               <hr>
+        
+                  <div class="offcanvas-footer" style=" display: block;" >
+                 
+                    <!-- <div style="display:flex; padding: 0 10px; justify-content: space-between;">
+                        <div><h5>SUBTOTAL:</h5></div>
+                        <div><h5><span id="subtotal"></span>></h5></div>
+                       
+                      </div>
+                      <hr> -->
+                      <div style="display: flex;  justify-content: space-evenly;">
+                    <button type="button" class="btn btn-light">close</button>
+                    <button type="button" class="btn btn-dark" >Check out</button>
+                </div>
+            </div>
+        
         </div>
       </div>
     </nav>
@@ -180,11 +230,11 @@
       <!-- filter product catergory -->
   <div class="container-fluid d-grid mt-5" id="Product-menu" onload="filterSelection('all')">
     <div class="row m-0">
-      <div class="col col-3 p=2" style="display: flex; flex-direction: row-reverse;">
+      <div class="col-12 col-xs-12 col-sm-12 col-md-3 col-lg-3 p=2 accord" style="display: flex; flex-direction: row-reverse;">
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item" style="width:250px ; align-self: left;">
             <h2 class="accordion-header" >
-              <button id="acbtn" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button id="acbtn"  class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
                 onclick="filterSelection('all')" >
                 PRODUCTS
@@ -196,28 +246,28 @@
                   <li class="list-group-item d-flex justify-content-between align-items-center btn active text-dark"
                     id="btn" onclick="filterSelection('hoodie')">
                     HOODIES
-                    <span id="badge" class="badge bg-light text-dark rounded-pill">5</span>
+                    <span id="badge1" class="badge bg-light text-dark rounded-pill"></span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center btn text-dark" id="btn"
                     onclick="filterSelection('men')">
                     MEN
-                    <span  id="badge" class="badge bg-light text-dark rounded-pill">7</span>
+                    <span  id="badge2" class="badge bg-light text-dark rounded-pill"></span>
                   </li>
 
                   <li class="list-group-item d-flex justify-content-between align-items-center btn text-dark" id="btn"
                     onclick="filterSelection('jacket')">
                     JACKETS
-                    <span  id="badge" class="badge bg-light text-dark rounded-pill">6</span>
+                    <span  id="badge3" class="badge bg-light text-dark rounded-pill"></span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center btn text-dark" id="btn"
                     onclick="filterSelection('sweatshirt')">
                     SWEATSHIRTS
-                    <span  id="badge" class="badge bg-light text-dark  rounded-pill">5</span>
+                    <span  id="badge4" class="badge bg-light text-dark  rounded-pill"></span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center btn text-dark" id="btn"
                     onclick="filterSelection('others')">
                     OTHERS
-                    <span  id="badge" class="badge bg-light text-dark rounded-pill">2</span>
+                    <span  id="badge5" class="badge bg-light text-dark rounded-pill"></span>
                   </li>
                 </ul>
               </div>
@@ -226,9 +276,9 @@
         </div>
       </div>
 
-      <div class="col col-9">
-        <h6 style="text-transform: captalise; color: #666;">&nbsp&nbsp&nbsp&nbsp Showing 1-12 of 47 results</h6>
-        <div class="container filterDi" id="data">
+      <div class="col-12 col-xs-12 col-sm-12 col-md-9 col-lg-9 productview">
+        <h6 id="h6"style="text-transform: captalise; color: #666;">&nbsp&nbsp&nbsp&nbsp Showing 1-12 of 47 results</h6>
+        <div class="container filterDi listProduct" >
 
             <!-- <div class="card" style="width: 16rem;">
              <div id="hide-i">
@@ -250,6 +300,79 @@
         </div>
       </div>
     </div>
+   
+     <!-- <div class="modal fade" id="modalsta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="#modalstat" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="  max-width: 80rem;">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body listmodal"  >
+       
+           <div class="modal fade" id="modalstat" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-labelledby="#modalstat" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content" style="  max-width: 80rem;">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                              <div class="row">
+          
+                      <div class="col col-6">
+                        <img class="image-top" style="width:400px;"
+                          src="${product.image}" alt="">
+                      </div>
+                      <div class="col col-6">
+                        <h4>{product.Producttext}</h4><br>
+                        <h6>$${product.Price}</h6><br>
+                        <p>A product short description is a concise and brief overview of a product, providing key
+                          information to potential customers. Typically, it is a brief summary that highlights the
+                          most important features, benefits, and characteristics of the product
+                        <h5>Color : Black</h5> <br>
+                        <ul class="list-group list-inline-item " style="width:200px; display: flex; flex-direction: row; padding-left: 0; margin-bottom: 10px; border-radius: 0.25rem;
+                              justify-content: space-between;">
+                          <li class="list-group-item border-0"
+                            style="padding:9px; border-radius: 0; background-color:rgb(231, 12, 12)" ;></li>
+                          <li class="list-group-item border-0" style="padding:9px; background-color:rgb(243, 144, 16)"
+                            ;></li>
+                          <li class="list-group-item border-0" style="padding:9px; background-color:rgb(240, 224, 10)"
+                            ;></li>
+                          <li class="list-group-item border-0" style="padding:9px; background-color:rgb(98, 248, 28)"
+                            ;></li>
+                          <li class="list-group-item border-0" style="padding:9px; background-color:rgb(39, 102, 238)"
+                            ;></li>
+                          <li class="list-group-item border-0"
+                            style="padding:9px;  border-radius: 0;background-color:rgb(238, 16, 201)" ;></li>
+                        </ul> <br>
+                        <div class=" py-1 d-flex justify-content-start" role="button">
+                          <div style="width:120px; " class="d-flex justify-content-between border  mx-3"><span
+                              class="fs-5 px-3">-</span>
+                            <span class="fs-5 px-3">1</span>
+                            <span class="fs-5 px-3">+</span>
+                          </div>
+          
+                          <button class="btn btn-dark"> <a href="shop.html" style="text-decoration:none; color:#fff;">Add To Cart</a></button>
+                        </div>
+          
+                        <br><br>
+                        <h6><i id="bi" class="bi bi-heart"></i> Add to wishList</h6>
+                      </div>
+                    </div>
+                    </div>
+                 
+                  </div>
+                </div>
+              </div>
+
+
+          </div>
+       
+        </div>
+      </div>
+    </div>  -->
+
+
   </div>
     <!-- filterends -->
       <!-- Swipper --><br>
@@ -424,8 +547,8 @@
     
     </div>
   </div></div><br><br>
-  <div id="footer" class=" d-grid text-light" style=" background-color: black;">
-<div class="row p-5">
+  <div id="footer" class="text-light p-5" style=" background-color: black;">
+<div class="row ">
 <div class="col-3">
 <h1>Mixtas</h1>
   <p >Whether you're a trendsetter, a minimalist, or an adventure at heart, Mixtas has 
@@ -461,14 +584,16 @@
 </div>
 
   <hr>
-<div class="d-lg-flex d-md-flex justify-content-between px-4 py-1"><div><p>© 2024 Mixtas All rights reserved. Developed By Apsara Rose Delina</p></div><div><img src="/assets/footer_logo-B6sl1ycH.png" alt="" height="20"></div></div></div>
+<div class="d-lg-flex d-md-flex justify-content-between px-4 py-1"><div><p>© 2024 Mixtas All rights reserved. Developed By Apsara Rose Delina</p></div><div><img src="images/footer_logo-B6sl1ycH.png" alt="" height="20"></div></div></div>
 
 
 
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+ 
   <script>
+
+
 
 // swipper
 
@@ -495,11 +620,21 @@ const swiper = new Swiper('.slider-wrapper', {
        }
      }
    });
+   $( document ).ready( filterSelection("all") ); 
+     $( window ).ready( filterSelection("all") );
 // Filter products
 filterSelection("all")
 var products=document.getElementById('data');
-let badge =  products.length;
-document.getElementsById("badge").innerHTML = badge;
+badge=productList.filter(p =>p.Productname=="hoodie");
+    document.getElementById('badge1').innerHTML=badge.length;
+    badge=productList.filter(p =>p.Productname=="men");
+    document.getElementById('badge2').innerHTML=badge.length;
+    badge=productList.filter(p =>p.Productname=="jacket");
+    document.getElementById('badge3').innerHTML=badge.length;
+    badge=productList.filter(p =>p.Productname=="sweatshirt");
+    document.getElementById('badge4').innerHTML=badge.length;
+    badge=productList.filter(p =>p.Productname=="others");
+    document.getElementById('badge5').innerHTML=badge.length;
 function filterSelection(c) {
   var x, i, badge;
 
@@ -533,10 +668,12 @@ function w3RemoveClass(element, name) {
 }
 
 
-</script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="script.js" type="module"></script>
 
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="scrip.js" type="module"></script>
+<script src="cart.js" type="module"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
   integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"

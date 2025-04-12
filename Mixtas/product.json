@@ -10,7 +10,7 @@
 {
     "id":2,
     "Productname":"men",
-        "Price":450.00,
+     "Price":450.00,
     "image":"images/popula-products (2).png",
     "Producttext":"Classic Small Logo Sweatpants, black"
 },
@@ -226,6 +226,13 @@
     "Productname":"men",
     "Price":1000,
     "image":"images/popula-products (32).png",
+    "Producttext":"Classic Small Logo Sweatpants, black"
+},
+{
+    "id":33,
+    "Productname":"sweatshirt",
+    "Price":1000,
+    "image":"images/popula-products (4).png",
     "Producttext":"Classic Small Logo Sweatpants, black"
 }
 ]
